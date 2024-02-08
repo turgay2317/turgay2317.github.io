@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+
+	<div id="content">
+		<div class="centerize">
+			<span class="title">DFA</span>
+			<small>(Deterministic Finite Automata)</small>
+			<span class="title">SIMULATOR</span>
+			<small>developed by</small>
+			<span><a class="url" href="https://www.linkedin.com/in/turgayceylan/">Turgay CEYLAN</a></span>
+		</div>
+		<br>
+		<div class="centerize">
+			<canvas id="canvas-container" width="960" height="480"></canvas>
+			<div>
+				<button id="add-state">Add State</button>
+				<button id="delete-state">Delete State</button>
+
+				<button id="add-transition">Add Transition</button>
+				<button id="delete-transition">Delete Transition</button>
+
+				<button id="set-begin">Set Initial State</button>
+				<button id="set-finish">Set Final State</button>
+
+				<button id="test-expression">Test</button>
+				<button id="simulate-dfa">Simulate</button>
+			</div>
+		</div>
+	</div>
+	<script src="./State.js"></script>
+	<script src="./Transition.js"></script>
+	<script src="./minified.js"></script>
+</body>
+</html>
